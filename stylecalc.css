@@ -1,0 +1,102 @@
+body {
+    font-family:'Courier New', Courier, monospace;
+    background-color: #f0f8ff;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* توسيط العناصر أفقياً */
+    text-align: center; /* توسيط النص */
+    background-color: #262a2d;
+    padding: 20px;
+}
+
+header img {
+    margin-right: 10px; 
+    max-width: 70px;/* مسافة بسيطة بين اللوجو والعنوان */
+}
+
+header h1 {
+    color: #ffffff;
+    margin: 0; /* إزالة المسافات الزائدة */
+    flex-grow: 1; /* لضمان تمركز النص */
+}
+
+h2, h3 {
+    text-align: center;
+    color: #2a4d69;
+}
+
+#calculations {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+#area, #perimeter, #volume {
+    background-color: #ffffff;
+    border: 2px solid #4b86b4;
+    border-radius: 15px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+#area:hover, #perimeter:hover, #volume:hover {
+    transform: scale(1.05);
+}
+
+label, select, input, button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+input, select {
+    padding: 8px;
+    border: 1px solid #4b86b4;
+    border-radius: 5px;
+}
+
+.button-group {
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    background-color: #262a2d;
+    color: #fff;
+    border: none;
+    padding: 10px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    flex: 1;
+}
+
+button:hover {
+    background-color: #2a4d69;
+}
+
+p {
+    text-align: center;
+    font-weight: bold;
+    color: #e7ebee;
+}
+
+footer {
+    text-align: center;
+    background-color: #262a2d;
+    color: #fff;
+    padding: 10px 0;
+    margin-top: 60px;
+}
